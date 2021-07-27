@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+
+    <!-- Tailwind CDN  -->
+    <!-- Not a great idea to use tailwind CDN but it will work for the basics -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            /* border: 1px solid blue; */
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <header class="bg-red-50">
+        <div class="container md:h-screen mx-auto space-y-10 flex-col items-center md:flex md:flex-row justify-around items-center">
+            <div class="space-y-4 p-4">
+                <h1 class="text-3xl lg:text-7xl">
+                    <span class="text-indigo-700 font-bold">BE THE PENGUINS</span>
+                    <br>
+                    <span class="font-bold text-gray-500">OF WINTER</span>
+                </h1>
+                <p class="w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus.</p>
+                <button class="bg-gradient-to-b from-green-400 to-green-700 px-7 py-4 text-white rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+
+                   <span>Buy Now</span>
+                
+                </button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+
 </body>
+
 </html>
